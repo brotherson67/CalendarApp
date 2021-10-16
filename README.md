@@ -31,3 +31,9 @@ INITIAL WRITE-UP
     The Calendar needs to show the hours of the day, 
         add an initial div row to mockup how it should look
             I can populate the rest of them by using Jquery 
+
+
+
+    for calendar create div create fuunction
+
+    loop the function 9x
