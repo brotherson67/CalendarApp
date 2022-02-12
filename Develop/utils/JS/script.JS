@@ -7,7 +7,7 @@ const currentHour = moment().format("HH")
 for (let i = 0; i <= 9; i++) {
     if ($(".row")[i].id < currentHour) {
         $(".row")[i].children[1].classList.add("past");
-    } else if ($(".row")[i].id == currentTime) {
+    } else if ($(".row")[i].id == currentHour) {
         $(".row")[i].children[1].classList.add("present");
     } else {
         $(".row")[i].children[1].classList.add("future");
