@@ -1,8 +1,8 @@
 # Work Day Scheduler Starter Code
 
-REQUIREMENTS   
-    GIVEN I am using a daily planner to create a schedule
-    
+REQUIREMENTS  
+ GIVEN I am using a daily planner to create a schedule
+
     WHEN I open the planner
     THEN the current day is displayed at the top of the calendar
 
@@ -21,19 +21,4 @@ REQUIREMENTS
     WHEN I refresh the page
     THEN the saved events persist
 
-____________________________________________________________________________________________________
-
-INITIAL WRITE-UP
-    The current day needs to be displayed on the calendar
-        start by finding jquery for current day 
-        insert jquery element to #currentDay
-    
-    The Calendar needs to show the hours of the day, 
-        add an initial div row to mockup how it should look
-            I can populate the rest of them by using Jquery 
-
-
-
-    for calendar create div create fuunction
-
-    loop the function 9x
+---
