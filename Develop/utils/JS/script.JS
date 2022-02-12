@@ -1,17 +1,16 @@
 // current date
 $("#currentDay").append(moment().format("dddd, MMMM Do YYYY"));
+const currentHour = moment().format("H")
 
 
-// create function to check current time agianst posted time
-    // when the current time has passed the posted block but not the next make it red
-    // when the current time has entered a new block make it grey
-    // when waiting for the current time make green
+// compare currentHour with time block
+for (let i = 0; i <= 9; i++) {
+    if ($(".row")[i].id < currentTime) {
+        $(".row")[i].children[1].classList.add("past");
+    };
+};
 
-// create function that makes text editable
-    //when a block is clicked, the entered text will become the text shown
-$(".col-10").on("click", function() {
-    const text = $(this)
-})
+
 
 
 // create a function to save the text in case of refresh
