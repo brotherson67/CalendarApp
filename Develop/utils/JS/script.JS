@@ -27,17 +27,6 @@ $(".DESCRIPTION").on("click", "p", function() {
   textInput.trigger("focus");
 });
 
-$(".description").on("click", "p", function() {
-    let descriptionText = $(this) //textvalue of clicked description
-        .text()
-        .trim();
-    let descriptionInput = $("<textarea>") //create textarea element
-        .val(descriptionText);
-    $(this).replaceWith(descriptionInput) //replace p with textarea
-    descriptionInput.trigger("focus"); //focus on textarea
-});
-
-
 
 // create a function to save the text in case of refresh
 $(".saveBtn").click(function (e) {
