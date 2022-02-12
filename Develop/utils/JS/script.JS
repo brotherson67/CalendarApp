@@ -14,6 +14,28 @@ for (let i = 0; i <= 9; i++) {
     }
 };
 
+// get text to render without inputs
+$(".DESCRIPTION").on("click", "p", function() {
+  // get current text of p element
+  let text = $(this)
+    .text()
+    .trim();
+  let textInput = $("<textarea>").val(text);
+  $(this).replaceWith(textInput);
+
+  // auto focus new element
+  textInput.trigger("focus");
+});
+
+$(".description").on("click", "p", function() {
+    let descriptionText = $(this) //textvalue of clicked description
+        .text()
+        .trim();
+    let descriptionInput = $("<textarea>") //create textarea element
+        .val(descriptionText);
+    $(this).replaceWith(descriptionInput) //replace p with textarea
+    descriptionInput.trigger("focus"); //focus on textarea
+});
 
 
 
