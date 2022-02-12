@@ -10,7 +10,7 @@ $("#currentDay").append(moment().format("dddd, MMMM Do YYYY"));
 // create function that makes text editable
     //when a block is clicked, the entered text will become the text shown
 $(".col-10").on("click", function() {
-    
+    const text = $(this)
 })
 
 
