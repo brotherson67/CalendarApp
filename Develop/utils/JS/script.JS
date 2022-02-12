@@ -11,3 +11,10 @@ $("#currentDay").append(moment().format("dddd, MMMM Do YYYY"));
     //when a block is clicked, the entered text will become the text shown
 
 // create a function to save the text in case of refresh
+
+$(".saveBtn").click(function () {
+    const row = $(this).siblings(".time-block").value;
+    const time = $(this).parent().attr('id')[1]
+    localStorage.setItem(time, row)
+})
+
